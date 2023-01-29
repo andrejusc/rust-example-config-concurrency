@@ -1,0 +1,6 @@
+debug: false
+
+# Maximum concurrent calls at once
+concurrency: 5
+# Timeout in seconds for request
+timeout: 10

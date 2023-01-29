@@ -1,0 +1,21 @@
+[package]
+name = "service"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-mutex = "1.4.0"
+chrono = { version = "0.4.23", features = ["serde"] }
+config = "0.13.3"
+native-tls = { version = "0.2.11", features = ["vendored"] }
+reqwest = { version = "0.11.14", features = ["json"] }
+serde_json = "1.0.91"
+tokio = { version = "1.24.2", features = ["macros", "rt-multi-thread"] }
+tracing = "0.1.37"
+tracing-subscriber = "0.3.16"
+
+[build-dependencies]
+copy_to_output = "2.0.0"
+glob = "0.3.1"
